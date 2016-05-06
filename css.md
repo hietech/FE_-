@@ -1,6 +1,6 @@
 # CSS规范
 
-## CSS文件结构
+### CSS文件结构
     --- ../css/
      |---- css/libs/reset.css                  CSS reset文件
      |---- … …
@@ -10,7 +10,7 @@
      |---- css/images/xxx/sprite.png           xxx 的 CSS-sprite 图片
      |---- css/xxx-style.css                   xxx 的 样式表
 
-## CSS(含Less) 文件结构
+### CSS(含Less) 文件结构
     --- ../css/
      |---- css/libs/reset.less            CSS reset文件
      |---- css/libs/elements.less         Less 函数复用文件
@@ -23,7 +23,7 @@
      |---- css/xxx-style.less                  xxx 的 Less
      |---- css/xxx-style.css                   less -> css 自动生成
 
-## 使用Less
+### 使用Less
 在 `.less`文件头部引入 [reset.less] & [elements.less]，之后调用如下属性传参即可，具体使用说明见 -> [Lesselements] 官方文档
 
     @import "libs/reset.less";
@@ -45,13 +45,13 @@
     .columns
     .translate
 
-## CSS reset
+### CSS reset
 CSS reset 文件使用：[reset.css] 或 [reset.less]
 
 * reset文件用于重设各个浏览器的默认样式方案，解决其引起的耦合问题。
 * 也可使用 `.clearfix` 清除浮动
 
-## CSS注释格式约定
+### CSS注释格式约定
     /*
     @name: Drop Down Menu
     @description: Style of top bar drop down menu.
@@ -70,7 +70,7 @@ _其中，@require为可选项_
     * 避免中文，或使用转义，推荐前者
     如：`font-family: "Microsoft YaHei";` `font-family:\5fae\8f6f\96c5\9ed1;`
 
-## CSS各属性的排列顺序：不做硬性要求
+### CSS各属性的排列顺序：不做硬性要求
 _如：以下2种顺序均可_
 
     .box {
@@ -90,7 +90,7 @@ _如：以下2种顺序均可_
       position: relative;
     }
 
-## CSS嵌套规则
+### CSS嵌套规则
     /* 推荐嵌套层级 */
     .ui-icon-rarr{}
     .ui-icon-larr{}
@@ -105,7 +105,7 @@ _如：以下2种顺序均可_
     .ui-list{}
     .ui-nav{}
 
-## CSS格式化
+### CSS格式化
 勿格式化，保留下面这种格式，增加可读性和可维护性，后期后台程序(如：PHP/Python)会将CSS压缩成 **一行** 输出：
 
     .box{
